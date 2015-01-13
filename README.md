@@ -8,6 +8,7 @@ This repository contains three functions for working with Sparse Matrices.
 3.  VectorTimesSparse
 
 It also contains unit tests for each of those functions
+
 1.  TEST_ScalarTimesSparse
 2.  TEST_SparseTimesVector
 3.  TEST_VectorTimesSparse
