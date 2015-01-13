@@ -1,8 +1,8 @@
 function output_vector = SparseTimesVector( S,V )
 %S is a Matrix represented in sparse form.  A Matrix in sparse form is
 %defined as an Nx3 matrix where each row represents a single value contained
-%in the non sparse form.  Each row has the format [i,j,V] where i is the row,
-%j is column, and V is the value at i,j.
+%in the non sparse form.  Each row has the format [i,j,k] where i is the row,
+%j is column, and k is the value at i,j.
 %
 %V is a column vector
 %
