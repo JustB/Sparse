@@ -6,7 +6,8 @@ function output_matrix = ScalarTimesSparse( scalar , sparseMatrix )
 %j is column, and k is the value at i,j.
 %
 % scalar is any real or imaginary number.
-
+%
+%This function has O(n) = n where n is the number of rows of sparseMatrix.
 p = inputParser;
 addRequired(p,'sparseMatrix',@ismatrix);
 
