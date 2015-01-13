@@ -1,6 +1,5 @@
 function output_matrix = ScalarTimesSparse( scalar , sparseMatrix )
-%UNTITLED4 Summary of this function goes here
-%   Detailed explanation goes here
+% Multiply a scalar and a Matrix in Sparse form.
 
 p = inputParser;
 addRequired(p,'M',@ismatrix);
