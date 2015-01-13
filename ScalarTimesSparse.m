@@ -1,8 +1,14 @@
 function output_matrix = ScalarTimesSparse( scalar , sparseMatrix )
 % Multiply a scalar and a Matrix in Sparse form.
+% sparseMatrix is a Matrix represented in sparse form.  A Matrix in sparse form is
+%defined as an Nx3 matrix where each row represents a single value contained
+%in the non sparse form.  Each row has the format [i,j,k] where i is the row,
+%j is column, and k is the value at i,j.
+%
+% scalar is any real or imaginary number.
 
 p = inputParser;
-addRequired(p,'M',@ismatrix);
+addRequired(p,'sparseMatrix',@ismatrix);
 
 if scalar == 0
     output_matrix = 0;
